@@ -1,0 +1,171 @@
+/* Секция Аренда */
+.rent {
+    padding: 120px 0px 100px;
+}
+
+.section-title {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.rent__title {
+    margin-bottom: 15px;
+}
+
+.rent__btns {
+    margin-bottom: 50px;
+}
+
+.rent__btns-list {
+    display: flex;
+    /* Расстояние между элементами внутри флекс контейнера (по горизонтали) */
+    column-gap: 10px;
+}
+
+.rent__btns-item {}
+
+.offers-slider {}
+
+.offer-slider__container {
+    position: relative;
+}
+
+.offers__control {
+    width: 20px;
+    height: 20px;
+    top: 217px;
+}
+
+.offers__control.control_type_disc {
+    display: none;
+}
+
+.offers__control-prev {
+    left: 5px;
+}
+
+.offers__control-next {
+    right: 5px;
+}
+
+.offers-list {
+    display: flex;
+    column-gap: 20px;
+    overflow-x: hidden;
+    margin: 0 -10px;
+    padding: 10px;
+}
+
+.offer {
+    width: 380px;
+    flex-shrink: 0;
+}
+
+.offer__content {
+    background-color: #FFFFFF;
+    /* Тень */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    /* Спрятать все что выходит за пределы блока */
+    overflow: hidden;
+}
+
+.offer__img-wrap {
+    height: 222px;
+}
+
+.offer__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Блок с информацией */
+.offer__info {
+    padding: 33px 40px 40px;
+}
+
+.offer__info-list {
+    margin-bottom: 30px;
+}
+
+.offer__info-item {
+    margin-bottom: 20px;
+    color: #000000;
+    font-size: 16px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.offer__info-item:last-child {
+    margin-bottom: 0px;
+}
+
+.offer__info-desc {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    line-height: 120%;
+    display: flex;
+    flex: 1;
+}
+
+.offer__info-desc:after {
+    content: "";
+    display: inline-block;
+    border-bottom: 1px dashed #E6E6E6;
+    flex: 1;
+}
+
+.offer__info-value {
+    font-family: 'Roboto';
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.offer__info-value_true {}
+
+.btn_theme_blue {}
+
+.offer__btn {
+    width: 100%;
+}
+
+.slider-pagination {}
+
+.offers-slider__pagination {
+    width: 100%;
+    padding-top: 50px;
+}
+
+.slider-pagination__bullets {}
+
+.offers-slider__pagination-bullets {
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+}
+
+.slider-pagination__bullet {
+    flex: 0 1 73px;
+    height: 3px;
+    border-radius: 1px;
+    overflow: hidden;
+}
+
+.offers-slider__pagination-bullet {}
+
+.slider-padination__link {
+    background: #D9D9D9;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.slider-pagination__bullet.active .slider-padination__link {
+    background: #1E92E7;
+}

@@ -1,0 +1,97 @@
+/* HERO */
+
+.hero {
+    background-image: url(../../img/hero/decor.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #2C3B45;
+    padding-top: 132px;
+    border-bottom: 50px solid #1E92E7;
+}
+
+.hero__container {
+    height: 100%;
+    display: flex;
+}
+
+.hero__content {
+    /* Внутренний отступ в % (отступ 92px / ширину родителя 1180px = 7,8% ) */
+    padding-top: 7.8%;
+    /* 602 / 1180 = 51% */
+    flex-basis: 51%;
+    padding-right: 20px;
+    margin-bottom: 16.9%;
+}
+
+.location {}
+
+.hero__location {
+    /* 36px / 602px = 6% */
+    margin-bottom: 6%;
+}
+
+.location__icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.location__text {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #1E92E7;
+}
+
+.title {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    max-width: 488px;
+}
+
+.hero__title {
+    /* 47 / 602 = 7.8% */
+    margin-bottom: 7.8%;
+}
+
+.hero__btn {
+    min-width: 244px;
+}
+
+.hero__img-wrap {
+    position: relative;
+    border-radius: 5px 0px 0px 0px;
+    flex: 1;
+}
+
+.hero__img-wrap::before {
+    content: "";
+    display: block;
+    background-image: url(../../img/hero/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    border-radius: inherit;
+}
+
+.hero__img {
+    height: 95%;
+    object-fit: contain;
+    object-position: center bottom;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}

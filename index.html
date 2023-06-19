@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Инфолайн</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;600&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container header__container">
+                <nav class="nav header__nav">
+                    <a class="logo" href="#!">
+                        <img src="./img/icons/logo-icon.svg" alt="Ифнолайн logo" class="logo__img">
+                        <span class="logo__title">инфолайн</span>
+                    </a>
+                    <ul class="nav__list header__menu">
+                        <li class="nav__item">
+                            <a href="" class="nav__link">Главная</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" class="nav__link">Аренда</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" class="nav__link">Услуги</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" class="nav__link">Контакты</a>
+                        </li>
+                    </ul>
+
+                    <div class="phone header__contact">
+                        <img src="./img/icons/tel.svg" alt="" class="header__contact-img">
+                        <a href="tel:+73452388000" class="header__phone">8(3452)<span>388-000</span></a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section class="hero">
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <address class="location hero__location">
+                        <img src="img/icons/clarity_map-marker-solid.svg" width="24" height="24" alt="icons location"
+                            class="location__icon">
+                        <span class="location__text">ул. респубкики, 61</span>
+                    </address>
+                    <h1 class="title hero__title">
+                        Бизнес-центр <br>
+                        в тюмени
+                    </h1>
+                    <button class="btn hero__btn btn_theme_blue btn_size_big">Заказать звонок</button>
+                </div>
+                <div class="hero__img-wrap">
+                    <img class="hero__img" src="./img/hero/vertical-shot-white-building-clear-sky.png" alt="Здание">
+                </div>
+            </div>
+        </section>
+        <section class="rent">
+            <div class="container">
+                <h2 class="section-title rent__title">аренда</h2>
+                <div class="rent__btns">
+                    <ul class="rent__btns-list">
+                        <li class="rent__btns-item">
+                            <button class="btn btn_theme_transparent btn_size_small active">
+                                Офисы (7)
+                            </button>
+                        </li>
+                        <li class="rent__btns-item">
+                            <button class="btn btn_theme_transparent btn_size_small">
+                                конференс-залы (2)
+                            </button>
+                        </li>
+                        <li class="rent__btns-item">
+                            <button class="btn btn_theme_transparent btn_size_small">
+                                Торговые (0)
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="offers-slider">
+                <div class="container offer-slider__container ">
+                    <button
+                        class="control control_prev offers__control offers__control-prev control_type_triangle">назад</button>
+                    <button
+                        class="control control_prev offers__control offers__control-prev control_type_disc">назад</button>
+                    <ul class="offers-list">
+                        <li class="offer">
+                            <div class="offer__content">
+                                <div class="offer__img-wrap">
+                                    <img src="img/rent/rent1.jpg" alt="Фото кабинета" class="offer__img" width="380"
+                                        height="222">
+                                </div>
+                                <div class="offer__info">
+                                    <ul class="offer__info-list">
+                                        <li class="offer__info-item">
+                                            <span class="offer__info-desc">Площадь</span>
+                                            <span class="offer__info-value">42</span>
+                                        </li>
+                                        <li class="offer__info-item">
+                                            <span class="offer__info-desc">Этаж</span>
+                                            <span class="offer__info-value">7</span>
+                                        </li>
+                                        <li class="offer__info-item">
+                                            <span class="offer__info-desc">Интернет</span>
+                                            <span class="offer__info-value offer__info-value_true">Есть</span>
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn_theme_blue offer__btn btn_size_big">запросить цену</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="offer">
+                            <div class="offer__content">
+                                <div class="offer__img-wrap">
+                                    <img src="img/rent/rent1.jpg" alt="Фото кабинета" class="offer__img" width="380"
+                                        height="222">
+                                </div>
+                                <div class="offer__info">
+                                    <ul class="offer__info-list">
+                                        <li class="offer__info-item">
+                                            <span class="offer__info-desc">Площадь</span>
+                                            <span class="offer__info-value">42</span>
+                                        </li>
+                                        <li class="offer__info-item">
+                                            <span class="offer__info-desc">Этаж</span>
+                                            <span class="offer__info-value">7</span>
+                                        </li>
+                                        <li class="offer__info-item">
+                                            <span class="offer__info-desc">Интернет</span>
+                                            <span class="offer__info-value offer__info-value_true">Есть</span>
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn_theme_blue offer__btn btn_size_big">запросить цену</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="offer">
+                            <div class="offer__content">
+                                <div class="offer__img-wrap">
+                                    <img src="img/rent/rent1.jpg" alt="Фото кабинета" class="offer__img" width="380"
+                                        height="222">
+                                </div>
+                                <div class="offer__info">
+                                    <ul class="offer__info-list">
+                                        <li class="offer__info-item">
+                                            <span class="offer__info-desc">Площадь</span>
+                                            <span class="offer__info-value">42</span>
+                                        </li>
+                                        <li class="offer__info-item">
+                                            <span class="offer__info-desc">Этаж</span>
+                                            <span class="offer__info-value">7</span>
+                                        </li>
+                                        <li class="offer__info-item">
+                                            <span class="offer__info-desc">Интернет</span>
+                                            <span class="offer__info-value offer__info-value_true">Есть</span>
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn_theme_blue offer__btn btn_size_big">запросить цену</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <button
+                        class="control control_next offers__control offers__control-next control_type_triangle">вперед</button>
+                    <button
+                        class="control control_next offers__control offers__control-next control_type_disc">вперед</button>
+                    <div class="slider-pagination offers-slider__pagination">
+                        <!-- Список буллетов -->
+                        <ul class="slider-pagination__bullets offers-slider__pagination-bullets">
+                            <!-- Буллет -->
+                            <li class="slider-pagination__bullet offers-slider__pagination-bullet">
+                                <a href="#!" class="slider-padination__link offers-slider__pagination-link"></a>
+                            </li>
+                            <li class="slider-pagination__bullet offers-slider__pagination-bullet">
+                                <a href="#!" class="slider-padination__link offers-slider__pagination-link"></a>
+                            </li>
+                            <li class="slider-pagination__bullet offers-slider__pagination-bullet active">
+                                <a href="#!" class="slider-padination__link offers-slider__pagination-link"></a>
+                            </li>
+                            <li class="slider-pagination__bullet offers-slider__pagination-bullet">
+                                <a href="#!" class="slider-padination__link offers-slider__pagination-link"></a>
+                            </li>
+                            <li class="slider-pagination__bullet offers-slider__pagination-bullet">
+                                <a href="#!" class="slider-padination__link offers-slider__pagination-link"></a>
+                            </li>
+                            <li class="slider-pagination__bullet offers-slider__pagination-bullet">
+                                <a href="#!" class="slider-padination__link offers-slider__pagination-link"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------- Услуги -------->
+        <section class="services section">
+            <div class="container">
+                <!-- Шапка секции (заголовок и логотип) -->
+                <div class="services__header">
+                    <h2 class="section-title services__title">Услуги компании</h2>
+                    <div class="logo services__logo">
+                        <img src="./img/icons/logo-icon.svg" alt="Логотип" class="logo__img">
+                        <span class="logo__title">инфолайн</span>
+                    </div>
+                </div>
+                <!-- Список услуг -->
+                <ul class="services__list">
+                    <!-- Услуга -->
+                    <li class="service">
+                        <!-- Картинка -->
+                        <div class="service__img">
+                            <img class="service__pic" src="img/icons/wifi.svg" alt="wifi">
+                        </div>
+                        <!-- Блок с описанием -->
+                        <div class="service__content">
+                            <!-- Заголовок блока -->
+                            <h3 class="service__title">Обслуживание офисной техники и интернет</h3>
+                            <!-- Список преимуществ -->
+                            <ul class="service__list">
+                                <li class="service__item">Локальные сети и интернет</li>
+                                <li class="service__item">Контроль доступа</li>
+                                <li class="service__item">Обслуживание офисной техники</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="service">
+                        <div class="service__img">
+                            <img class="service__pic" src="img/icons/Public-utilities.svg" alt="instrument">
+                        </div>
+                        <div class="service__content">
+                            <h3 class="service__title">Коммунальные услуги</h3>
+                            <ul class="service__list">
+                                <li class="service__item">Системы отопления и водоснабжения</li>
+                                <li class="service__item">Электрические системы</li>
+                                <li class="service__item">Ремонт и отделка помещений</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="service">
+                        <div class="service__img">
+                            <img class="service__pic" src="img/icons/security.svg" alt="security">
+                        </div>
+                        <div class="service__content">
+                            <h3 class="service__title">Охрана и безопастность</h3>
+                            <ul class="service__list">
+                                <li class="service__item">Видеонаблюдение</li>
+                                <li class="service__item">Охранная сигнализация</li>
+                                <li class="service__item">Пожарная сигнализация</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="service">
+                        <div class="service__img">
+                            <img class="service__pic" src="img/icons/learn.svg" alt="learn">
+                        </div>
+                        <div class="service__content">
+                            <h3 class="service__title">Обучение сотрудников</h3>
+                            <ul class="service__list">
+                                <li class="service__item">Обучение сотрудников iT программам</li>
+                                <li class="service__item">Проф. переподготовка</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="service">
+                        <div class="service__img">
+                            <img class="service__pic" src="img/icons/diagrama.svg" alt="diagrama">
+                        </div>
+                        <div class="service__content">
+                            <h3 class="service__title">Бухгалтерия и юр. услуги</h3>
+                            <ul class="service__list">
+                                <li class="service__item">Бухгалтерия и финансовый учет</li>
+                                <li class="service__item">Юридическое сопровождение</li>
+                                <li class="service__item">Внедрение 1С</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="service">
+                        <div class="service__img">
+                            <img class="service__pic" src="img/icons/clining.svg" alt="wifi">
+                        </div>
+                        <div class="service__content">
+                            <h3 class="service__title">Обслуживание офисной техники и интернет</h3>
+                            <ul class="service__list">
+                                <li class="service__item">Уборка дворовой части (снег, листья)</li>
+                                <li class="service__item">Вывоз мусора</li>
+                                <li class="service__item">Уборка помещений</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!------ Фотогалерея ------>
+        <section class="gallery section">
+            <div class="container">
+                <h2 class="section-title gallery__title">
+                    фото галерея
+                </h2>
+            </div>
+            <!-- Слайдер -->
+            <div class="gallery__slider">
+                <!-- Кнопки слайдера -->
+                <div class="gallery__slider-controls">
+                    <div class="container gallery__slider-controls-container">
+                        <!-- Копка назад -->
+                        <button
+                            class="control control_type_disc control_prev gallery__slider-control gallery__slider-control-prev">Назад</button>
+                        <!-- Кнопка вперед -->
+                        <button
+                            class="control control_type_disc control_next gallery__slider-control gallery__slider-control-next">Вперед</button>
+                    </div>
+                </div>
+                <!-- Список фото -->
+                <ul class="gallery__list">
+                    <li class="gallery__item">
+                        <img src="./img/gallery/photo1.jpg" alt="" class="gallery__img">
+                    </li>
+                    <li class="gallery__item">
+                        <img src="./img/gallery/photo2.jpg" alt="" class="gallery__img">
+                    </li>
+                    <li class="gallery__item">
+                        <img src="./img/gallery/photo1.jpg" alt="" class="gallery__img">
+                    </li>
+                    <li class="gallery__item">
+                        <img src="./img/gallery/photo1.jpg" alt="" class="gallery__img">
+                    </li>
+                </ul>
+            </div>
+            <!-- Буллеты -->
+            <div class="container">
+                <div class="gallery__pagination">
+                    <div class="slider-pagination offers-slider__pagination">
+                        <ul class="slider-pagination__bullets gallery-slider__pagination-bullets">
+                            <li class="slider-pagination__bullet gallery-slider__pagination-bullet">
+                                <a href="" class="slider-pagination__link gallery-slider__pagination-link"></a>
+                            </li>
+                            <li class="slider-pagination__bullet gallery-slider__pagination-bullet">
+                                <a href="" class="slider-pagination__link gallery-slider__pagination-link"></a>
+                            </li>
+                            <li class="slider-pagination__bullet gallery-slider__pagination-bullet active">
+                                <a href="" class="slider-pagination__link gallery-slider__pagination-link"></a>
+                            </li>
+                            <li class="slider-pagination__bullet gallery-slider__pagination-bullet">
+                                <a href="" class="slider-pagination__link gallery-slider__pagination-link"></a>
+                            </li>
+                            <li class="slider-pagination__bullet gallery-slider__pagination-bullet">
+                                <a href="" class="slider-pagination__link gallery-slider__pagination-link"></a>
+                            </li>
+                            <li class="slider-pagination__bullet gallery-slider__pagination-bullet">
+                                <a href="" class="slider-pagination__link gallery-slider__pagination-link"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+
+</html>
