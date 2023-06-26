@@ -68,7 +68,7 @@
 .hero__img-wrap {
     position: relative;
     border-radius: 5px 0px 0px 0px;
-    flex: 1;
+    flex-grow: 1;
 }
 
 .hero__img-wrap::before {

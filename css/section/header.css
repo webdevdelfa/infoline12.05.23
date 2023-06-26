@@ -85,3 +85,146 @@
 .header__phone span {
     color: #FFFFFF;
 }
+
+/***** ПОЛНОЭКРАННОЕ МЕНЮ *****/
+/* Полноэкранное меню появляется когда к блоку header__nav добавляется класс header__nav-mobile */
+
+/* Мобильное меню */
+.header__nav-mobile {
+    flex-direction: column;
+    justify-content: flex-start;
+    background: #1E92E7;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 16px 16px 50px;
+    text-align: center;
+    z-index: 100;
+}
+
+/* Список элементов меню на мобильном устройстве */
+.header__nav-mobile .nav__list {
+    display: flex;
+    background: none;
+    margin-top: 54px;
+    padding: 0;
+    flex-direction: column;
+    row-gap: 30px;
+    align-self: center;
+    flex: 1;
+}
+
+.header__nav-mobile .nav__item {
+    margin-right: 0;
+}
+
+/* Спрятать изображение логотипа белого цвета если он не находится внутри мобильного меню */
+.header__nav:not(.header__nav-mobile) .logo__img--white {
+    display: none;
+}
+
+/* Спрятать голубое изображение логотипа внутри мобильного меню */
+.header__nav-mobile .logo__img--blue {
+    display: none;
+}
+
+/* Прозрачный логотип внутри мобильного меню */
+.header__nav-mobile .logo {
+    opacity: 0.2;
+}
+
+/* Спрятать телефон который находится внутри мобильного меню */
+.header__nav-mobile-phone {
+    display: none;
+}
+
+/* Отобразить телефон внутри мобильного меню */
+.header__nav-mobile .header__nav-mobile-phone {
+    display: block;
+}
+
+/* Стили телефона в мобильном меню */
+.header__nav-mobile .header__nav-mobile-phone {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+/************* БУРГЕР ************/
+
+/* Бургер меню */
+.burger {
+    /* Скрываем на десктопах */
+    display: none;
+    /* Убираем паддинги кнопки */
+    padding: 0;
+    /* Ширина и высота по макету */
+    width: 26px;
+    height: 20px;
+    /* Расположить поверх всех элементов */
+    z-index: 10;
+    /* Относительно кнопки будем позиционировать все три элемента бургера */
+    position: relative;
+}
+
+/* Элемент бургер меню */
+.burger__el {
+    display: block;
+    background: #FFFFFF;
+    border-radius: 1px;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    transition: all 300ms;
+}
+
+/* Прижать верхний элемент бургера к верхнему краю */
+.burger__el:nth-child(1) {
+    top: 0;
+}
+
+/* Расположить средний элемент по центру */
+.burger__el:nth-child(2) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Прижать нижний элемент бургера к нижнему краю */
+.burger__el:nth-child(3) {
+    bottom: 0;
+}
+
+/* Стили элементов бургера внутри мобильного меню */
+/* Бургер меню внутри полноэкранного меню */
+.header__nav-mobile .burger {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+}
+
+/* Спрятать средний элемент */
+.header__nav-mobile .burger__el:nth-child(2) {
+    opacity: 0;
+}
+
+/* Повернуть верхний элемент на 45 градусов */
+.header__nav-mobile .burger__el:nth-child(1) {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* Повернуть нижний элемент на -45 градусов */
+.header__nav-mobile .burger__el:nth-child(3) {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/************* БУРГЕР (конец) ************/

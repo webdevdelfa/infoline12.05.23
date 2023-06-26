@@ -21,7 +21,9 @@
             <div class="container header__container">
                 <nav class="nav header__nav">
                     <a class="logo" href="#!">
-                        <img src="./img/icons/logo-icon.svg" alt="Ифнолайн logo" class="logo__img">
+                        <img src="./img/icons/logo-icon.svg" alt="Ифнолайн logo" class="logo__img logo__img--blue">
+                        <img src="./img/icons/logo-icon-white.svg" alt="Ифнолайн logo"
+                            class="logo__img logo__img--white">
                         <span class="logo__title">инфолайн</span>
                     </a>
                     <ul class="nav__list header__menu">
@@ -43,6 +45,17 @@
                         <img src="./img/icons/tel.svg" alt="" class="header__contact-img">
                         <a href="tel:+73452388000" class="header__phone">8(3452)<span>388-000</span></a>
                     </div>
+
+                    <!-- Телефон для мобильного меню -->
+                    <a class="header__nav-mobile-phone" href="tel:+73452388-000">+7 (3452) 388-000</a>
+                    <!-- Бургер -->
+                    <button class="burger">
+                        <span class="burger__el"></span>
+                        <span class="burger__el"></span>
+                        <span class="burger__el"></span>
+                    </button>
+                    <!-- end Бургер -->
+
                 </nav>
             </div>
         </header>
@@ -99,7 +112,7 @@
                             <div class="offer__content">
                                 <div class="offer__img-wrap">
                                     <img src="img/rent/rent1.jpg" alt="Фото кабинета" class="offer__img" width="380"
-                                        height="222">
+                                        height="222" srcset="img/rent/image-1@2x.jpg 2x, img/rent/image-1@3x.jpg 3x">
                                 </div>
                                 <div class="offer__info">
                                     <ul class="offer__info-list">
@@ -124,7 +137,7 @@
                             <div class="offer__content">
                                 <div class="offer__img-wrap">
                                     <img src="img/rent/rent1.jpg" alt="Фото кабинета" class="offer__img" width="380"
-                                        height="222">
+                                        height="222" srcset="img/rent/image-1@2x.jpg 2x">
                                 </div>
                                 <div class="offer__info">
                                     <ul class="offer__info-list">
@@ -149,7 +162,7 @@
                             <div class="offer__content">
                                 <div class="offer__img-wrap">
                                     <img src="img/rent/rent1.jpg" alt="Фото кабинета" class="offer__img" width="380"
-                                        height="222">
+                                        height="222" srcset="img/rent/image-1@2x.jpg 2x">
                                 </div>
                                 <div class="offer__info">
                                     <ul class="offer__info-list">
@@ -366,6 +379,34 @@
                 </div>
             </div>
         </section>
+        <!-- <div class="form-wrap">
+            <form action="" class="form">
+                <div class="form__header">
+                    <p class="form__title">Оставьте ваши контакты</p>
+                </div>
+                <div class="form__content">
+                    <label class="form__row">
+                        <div class="form__input-name">Имя</div>
+                        <input type="text" name="name" class="form__input">
+                    </label>
+                    <label class="form__row">
+                        <div class="form__input-name">Имя</div>
+                        <input type="tel" name="phone" class="form__input">
+                    </label>
+                    <label class="form__row">
+                        <div class="form__input-name">Имя</div>
+                        <input type="email" name="email" class="form__input">
+                    </label>
+                    <div class="form__row">
+                        <button>запросить цену</button>
+                    </div>
+                </div>
+                <div class="form__desc">
+                    Нажимая на кнопку, вы даёте согласие на обработку своих персональных данных в соответствии с
+                    политикой конфиденциальности
+                </div>
+            </form>
+        </div> -->
     </div>
 </body>
 
